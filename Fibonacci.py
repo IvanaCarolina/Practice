@@ -12,9 +12,8 @@ class MyGen():
             num = MyGen.current
             MyGen.current += 1
             return num
-        raise StopIteration   #para o programa
-
+        raise StopIteration   
+        #para o programa
 gen = MyGen(0,101)
 for i in gen:
     print(i)
-    
