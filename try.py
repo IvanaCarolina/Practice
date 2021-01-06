@@ -11,3 +11,5 @@ while True:
     else:
         print('Thanks')
         break
+    finally:
+        print('----Bye----')
