@@ -1,19 +1,11 @@
-class MyGen():
-    current = 0
-    def __init__(self, first, last):
-        self.first = first
-        self.last = last
+def Fibonacci(num):
+    a = 0
+    b = 1
+    for i in range(num):
+        yield a
+        temp = a
+        a = b
+        b = temp + a
 
-    def __iter__(self):
-        return self
-
-    def __next__(self):
-        if MyGen.current < self.last:
-            num = MyGen.current
-            MyGen.current += 1
-            return num
-        raise StopIteration   
-        #para o programa
-gen = MyGen(0,101)
-for i in gen:
-    print(i)
+for f in Fibonacci(10):
+    print (f)
