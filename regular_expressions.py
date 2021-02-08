@@ -14,4 +14,5 @@ print(a)
 print(check)
 
 #[A-Za-z0-9$%#@]{7,}[0-9]\d
+#string2 = 'Ivana$@1788Carol2991'
 #[A-Za-z0-9$%#@]{7,}[0-9]
